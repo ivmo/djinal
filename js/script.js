@@ -61,7 +61,6 @@ $( document ).ready(function() {
 });
 
 $(document).ready(function () {
-  
   var itemAdult = $('.people-count__adult [type=checkbox]');
   var itemChildren = $('.people-count__children [type=checkbox]');
   var currAdult;
@@ -69,7 +68,7 @@ $(document).ready(function () {
 
   $(document).on('click', itemAdult, function(evt) {
     itemAdult.filter(':checked').not(this).removeAttr('checked');
-
+      
   });
 
 
