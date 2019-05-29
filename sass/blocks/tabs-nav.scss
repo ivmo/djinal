@@ -1,0 +1,128 @@
+.tabs-nav {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: $gray--med;
+  overflow: hidden;
+
+  .swiper-button-prev {
+    display: none;
+    width: 44px;
+    height: 44px;
+    background: url("../img/arrow-prev-orange.png") no-repeat;
+    background-size: 100%;
+    left: 2px;
+
+    @media #{$tablet-width--lg} {
+      display: block;
+    }
+  }
+  .swiper-button-next {
+    display: none;
+    width: 44px;
+    height: 44px;
+    background: url("../img/arrow-next-orange.png") no-repeat;
+    background-size: 100%;
+    right: 2px;
+
+    @media #{$tablet-width--lg} {
+      display: block;
+    }
+  }
+}
+
+.tabs-nav--desktop {
+  overflow: visible;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .tabs-nav__item {
+    flex: 1;
+  }
+}
+
+.tabs-nav__item {
+  position: relative;
+  display: flex;
+  list-style: none;
+  background: $gray--med;
+}
+
+.tabs-nav__link {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: $font-md;
+  line-height: $line-sm;
+  color: $text-title;
+  font-family: 'Comfortaa';
+  font-weight: 700;
+  transition: all 0.2s;
+  min-height: 114px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    background: $gray--lg;
+    text-decoration: none;
+  }
+
+  span {
+    display: block;
+    font-size: $font-xxs;
+    line-height: $line-xxs;
+    font-family: 'Roboto', Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+
+  }
+}
+
+.tabs-nav__link--underline {
+  text-decoration: underline;
+}
+
+.tabs-nav__link--active {
+  color: $text-white;
+  background: $color-secondary;
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+
+  &:hover {
+    background: $color-secondary;
+  }
+}
+
+.tabs-nav__info {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 25px;
+  background: $bg-opacity--lg;
+  z-index: 2;
+  box-sizing: border-box;
+
+  &--active {
+    display: block;
+  }
+}
+
+.tabs-nav__text {
+  margin-bottom: 10px;
+  font-size: $font-md;
+  line-height: $line-xlg;
+  color: $text-white;
+
+  @media #{$tablet-width--md} {
+    display: none;
+  }
+}

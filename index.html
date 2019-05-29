@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+  </head>
+  <body class="no-pt">
+
+    <header class="main-header  main-header--bg-main" id="header">
+      <div class="container">
+        <div class="main-header__top">
+          <div class="main-header__left">
+            <figure class="main-header__logo">
+              <a href="#"><img src="img/logo.png" alt=""></a>
+            </figure>
+            <div class="main-header__text">
+              <div class="main-header__small-title">Официальный сайт</div>
+              <h1 class="main-header__title">Санаторий Джинал</h1>
+              <div class="main-header__city">г. Кисловодск</div>
+            </div>
+          </div>
+          <div class="main-header__right">
+            <div class="main-header__info">
+              <a class="btn  btn--book  btn--bg-orange" href="#">Забронировать</a>
+              <div class="main-header__btns-wrapper">
+                <a class="main-header__link  main-header__link--photo" href="#">Фотогалерея</a>
+                <div class="search  js_search-link">
+                  <a class="search__link" href="#">Поиск</a>
+                  <input class="search__field" type="search" name="search" value="">
+                </div>
+                <a class="main-header__link  main-header__link--question" href="#">Задать вопрос</a>
+              </div>
+            </div>
+            <div class="contacts">
+              <a class="contacts__phone" href="tel:88005006775">8 (800) 500 6775</a>
+              <div class="contacts__text">Бесплатно по России</div>
+            </div>
+          </div>
+        </div>
+        <nav class="main-nav" id="main-nav">
+          <a class="hamburger" id="hamburger" href="">
+            <span></span>
+          </a>
+          <ul class="main-nav__list" id="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">О санатории</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Путевки</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Цены</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Номера</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Лечение</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Отдых</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Питание</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Отзывы</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="main-slider  js_main_slider">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="main-slider__item  swiper-slide">
+          <img class="main-slider__pic" src="img/main-slide.jpg" alt="">
+          <div class="main-slider__info">
+            <div class="container">
+              <div class="main-slider__title">В нашем санатории действует специальное предложение!</div>
+              <div class="main-slider__text">
+                С 09.01.2017 года по 05.03.2017 года проводится сезонная акция 5% скидка на санаторно-курортные путевки по всем категориям номеров с базовым и расширенным комплексом медицинских услуг</div>
+              <a class="btn btn--transparent" href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="main-slider__item  swiper-slide">
+          <img class="main-slider__pic" src="img/main-slide.jpg" alt="">
+          <div class="main-slider__info">
+            <div class="container">
+              <div class="main-slider__title">В нашем санатории действует специальное предложение!</div>
+              <div class="main-slider__text">
+                С 09.01.2017 года по 05.03.2017 года проводится сезонная акция 5% скидка на санаторно-курортные путевки по всем категориям номеров с базовым и расширенным комплексом медицинских услуг</div>
+              <a class="btn btn--transparent" href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="main-slider__item  swiper-slide">
+          <img class="main-slider__pic" src="img/main-slide.jpg" alt="">
+          <div class="main-slider__info">
+            <div class="container">
+              <div class="main-slider__title">В нашем санатории действует специальное предложение!</div>
+              <div class="main-slider__text">
+                С 09.01.2017 года по 05.03.2017 года проводится сезонная акция 5% скидка на санаторно-курортные путевки по всем категориям номеров с базовым и расширенным комплексом медицинских услуг</div>
+              <a class="btn btn--transparent" href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="treatment-programs">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-header__title">Лечебные программы</h2>
+          <div class="section-header__btn">
+            <a class="btn  btn--bg-orange  btn--section-header" href="#">Все программы</a>
+          </div>
+        </div>
+        <div class="programs-list  js_programs-list">
+          <div class="swiper-wrapper">
+            <div class="programs-list__item  swiper-slide">
+              <figure class="programs-list__img">
+                <a class="js_fancybox" data-fancybox="group1" href="img/img1.jpg"><img src="img/img1.jpg" alt=""></a>
+              </figure>
+              <div class="programs-list__info">
+                <h3 class="programs-list__title">
+                  <a class="programs-list__link" href="#">Програма антистресс</a>
+                </h3>
+                <div class="programs-list__text">Для многих жителей больших городов, приезжающих на Кавказские минеральные воды отдохнуть и подлечиться, будет актуальной программа «Антистресс», которую предлагает санаторий «Джинал».</div>
+              </div>
+            </div>
+            <div class="programs-list__item  swiper-slide">
+              <figure class="programs-list__img">
+                <a class="js_fancybox" data-fancybox="group1" href="img/img2.jpg"><img src="img/img2.jpg" alt=""></a>
+              </figure>
+              <div class="programs-list__info">
+                <h3 class="programs-list__title">
+                  <a class="programs-list__link" href="#">Програма антистресс</a>
+                </h3>
+                <div class="programs-list__text">Для многих жителей больших городов, приезжающих на Кавказские минеральные воды отдохнуть и подлечиться, будет актуальной программа «Антистресс», которую предлагает санаторий «Джинал».</div>
+              </div>
+            </div>
+            <div class="programs-list__item  swiper-slide">
+              <figure class="programs-list__img">
+                <a class="js_fancybox" data-fancybox="group1" href="img/img1.jpg"><img src="img/img1.jpg" alt=""></a>
+              </figure>
+              <div class="programs-list__info">
+                <h3 class="programs-list__title">
+                  <a class="programs-list__link" href="#">Програма антистресс</a>
+                </h3>
+                <div class="programs-list__text">Для многих жителей больших городов, приезжающих на Кавказские минеральные воды отдохнуть и подлечиться, будет актуальной программа «Антистресс», которую предлагает санаторий «Джинал».</div>
+              </div>
+            </div>
+            <div class="programs-list__item  swiper-slide">
+              <figure class="programs-list__img">
+                <a class="js_fancybox" data-fancybox="group1" href="img/img2.jpg"><img src="img/img2.jpg" alt=""></a>
+              </figure>
+              <div class="programs-list__info">
+                <h3 class="programs-list__title">
+                  <a class="programs-list__link" href="#">Програма антистресс</a>
+                </h3>
+                <div class="programs-list__text">Для многих жителей больших городов, приезжающих на Кавказские минеральные воды отдохнуть и подлечиться, будет актуальной программа «Антистресс», которую предлагает санаторий «Джинал».</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="advantages">
+      <div class="container">
+        <h2 class="advantages__title">Наши преимущества</h2>
+        <div class="advantages-list">
+          <div class="advantages-list__item">
+            <figure class="advantages-list__img"><img src="img/pre.png" alt=""></figure>
+            <div class="advantages-list__title">Система менеджмента качества</div>
+          </div>
+          <div class="advantages-list__item">
+            <figure class="advantages-list__img"><img src="img/pre.png" alt=""></figure>
+            <div class="advantages-list__title">Система менеджмента качества</div>
+          </div>
+          <div class="advantages-list__item">
+            <figure class="advantages-list__img"><img src="img/pre.png" alt=""></figure>
+            <div class="advantages-list__title">Система менеджмента качества</div>
+          </div>
+          <div class="advantages-list__item">
+            <figure class="advantages-list__img"><img src="img/pre.png" alt=""></figure>
+            <div class="advantages-list__title">Система менеджмента качества</div>
+          </div>
+          <div class="advantages-list__item">
+            <figure class="advantages-list__img"><img src="img/pre.png" alt=""></figure>
+            <div class="advantages-list__title">Система менеджмента качества</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="residence">
+      <div class="container">
+        <h2 class="residence__title">Номерной фонд санатория располагает следующими типами номеров:</h2>
+      </div>
+      <div class="tabs">
+        <div class="tabs__header  tabs__header--mobile">
+          <div class="container">
+            <ul class="tabs-nav  js_main-tabs-nav-slider">
+              <div class="swiper-wrapper">
+                <li class="tabs-nav__item  js_tab-item  swiper-slide" data-id="tab1">
+                  <a class="tabs-nav__link  tabs-nav__link--active" href="#">Апартамент<span>от 2000 руб/сут</span>
+                  </a>
+                  <div class="tabs-nav__info  tabs-nav__info--active">
+                    <div class="tabs-nav__text">13 апартаментов с тремя комнатами с балконами, кухней и двумя санузлами общей площадью по 70,35 м²</div>
+                    <a class="btn  btn--tabs" href="#">Подробнее</a>
+                  </div>
+                </li>
+                <li class="tabs-nav__item  js_tab-item  swiper-slide" data-id="tab2">
+                  <a class="tabs-nav__link" href="#">Номера люкс<span>от 2000 руб/сут</span>
+                  </a>
+                  <div class="tabs-nav__info">
+                    <div class="tabs-nav__text">13 апартаментов с тремя комнатами с балконами, кухней и двумя санузлами общей площадью по 70,35 м²</div>
+                    <a class="btn  btn--tabs" href="#">Подробнее</a>
+                  </div>
+                </li>
+                <li class="tabs-nav__item  js_tab-item  swiper-slide" data-id="tab3">
+                  <a class="tabs-nav__link" href="#">Одноместные номера<span>от 2000 руб/сут</span>
+                  </a>
+                  <div class="tabs-nav__info">
+                    <div class="tabs-nav__text">13 апартаментов с тремя комнатами с балконами, кухней и двумя санузлами общей площадью по 70,35 м²</div>
+                    <a class="btn  btn--tabs" href="#">Подробнее</a>
+                  </div>
+                </li>
+                <li class="tabs-nav__item  js_tab-item  swiper-slide" data-id="tab4">
+                  <a class="tabs-nav__link" href="#">Двухместный "Твин"<span>от 2000 руб/сут</span>
+                  </a>
+                  <div class="tabs-nav__info">
+                    <div class="tabs-nav__text">13 апартаментов с тремя комнатами с балконами, кухней и двумя санузлами общей площадью по 70,35 м²</div>
+                    <a class="btn  btn--tabs" href="#">Подробнее</a>
+                  </div>
+                </li>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </ul>
+          </div>
+        </div>
+        <div class="tabs__header">
+          <div class="container">
+            <ul class="tabs-nav  tabs-nav--desktop">
+                <li class="tabs-nav__item  js_tab-item" data-id="tab1">
+                  <a class="tabs-nav__link  tabs-nav__link--active" href="#">Апартамент<span>от 2000 руб/сут</span>
+                  </a>
+                  <div class="tabs-nav__info  tabs-nav__info--active">
+                    <div class="tabs-nav__text">13 апартаментов с тремя комнатами с балконами, кухней и двумя санузлами общей площадью по 70,35 м²</div>
+                    <a class="btn  btn--tabs" href="#">Подробнее</a>
+                  </div>
+                </li>
+                <li class="tabs-nav__item  js_tab-item" data-id="tab2">
+                  <a class="tabs-nav__link" href="#">Номера люкс<span>от 2000 руб/сут</span>
+                  </a>
+                  <div class="tabs-nav__info">
+                    <div class="tabs-nav__text">13 апартаментов с тремя комнатами с балконами, кухней и двумя санузлами общей площадью по 70,35 м²</div>
+                    <a class="btn  btn--tabs" href="#">Подробнее</a>
+                  </div>
+                </li>
+                <li class="tabs-nav__item  js_tab-item" data-id="tab3">
+                  <a class="tabs-nav__link" href="#">Одноместные номера<span>от 2000 руб/сут</span>
+                  </a>
+                  <div class="tabs-nav__info">
+                    <div class="tabs-nav__text">13 апартаментов с тремя комнатами с балконами, кухней и двумя санузлами общей площадью по 70,35 м²</div>
+                    <a class="btn  btn--tabs" href="#">Подробнее</a>
+                  </div>
+                </li>
+                <li class="tabs-nav__item  js_tab-item" data-id="tab4">
+                  <a class="tabs-nav__link" href="#">Двухместный "Твин"<span>от 2000 руб/сут</span>
+                  </a>
+                  <div class="tabs-nav__info">
+                    <div class="tabs-nav__text">13 апартаментов с тремя комнатами с балконами, кухней и двумя санузлами общей площадью по 70,35 м²</div>
+                    <a class="btn  btn--tabs" href="#">Подробнее</a>
+                  </div>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tabs-list">
+          <div class="tabs-list__item  tabs-list__item--active" data-id="tab1">
+            <div class="residence-slider  residence-slider--full" id="room_slider1">
+              <div class="swiper-wrapper">
+                <div class="residence-slider__item  swiper-slide"><img src="img/room-slide1.jpg" alt=""></div>
+                <div class="residence-slider__item  swiper-slide"><img src="img/room-slide1.jpg" alt=""></div>
+                <div class="residence-slider__item  swiper-slide"><img src="img/room-slide1.jpg" alt=""></div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+          <div class="tabs-list__item" data-id="tab2">
+            <div class="residence-slider  residence-slider--full" id="room_slider2">
+              <div class="swiper-wrapper">
+                <div class="residence-slider__item  swiper-slide"><img src="img/room-slide1.jpg" alt=""></div>
+                <div class="residence-slider__item  swiper-slide"><img src="img/room-slide1.jpg" alt=""></div>
+                <div class="residence-slider__item  swiper-slide"><img src="img/room-slide1.jpg" alt=""></div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+          <div class="tabs-list__item" data-id="tab3">
+            <div class="residence-slider  residence-slider--full" id="room_slider3">
+              <div class="swiper-wrapper">
+                <div class="residence-slider__item  swiper-slide"><img src="img/room-slide1.jpg" alt=""></div>
+                <div class="residence-slider__item  swiper-slide"><img src="img/room-slide1.jpg" alt=""></div>
+                <div class="residence-slider__item  swiper-slide"><img src="img/room-slide1.jpg" alt=""></div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+          <div class="tabs-list__item" data-id="tab4">
+            <div class="residence-slider  residence-slider--full" id="room_slider4">
+              <div class="swiper-wrapper">
+                <div class="residence-slider__item  swiper-slide"><img src="img/room-slide1.jpg" alt=""></div>
+                <div class="residence-slider__item  swiper-slide"><img src="img/room-slide1.jpg" alt=""></div>
+                <div class="residence-slider__item  swiper-slide"><img src="img/room-slide1.jpg" alt=""></div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="main-promo">
+      <div class="container">
+        <div class="main-promo__item">
+          <h2 class="main-promo__title">Санаторий в Кисловодске</h2>
+          <div class="main-promo__text">Санаторий «Джинал» расположен в живописном уголке г. Кисловодска, у подножия Джинальского хребта, на высоте 871 м над уровнем моря, недалеко от знаменитого курортного парка.</div>
+          <div class="main-promo__text  main-promo__text--cursive  main-promo__text--best-product">
+            Региональная комиссия по качеству наградила санаторий дипломом «Победитель регионального этапа Всероссийского конкурса программы «100 лучших товаров России - 2016»
+          </div>
+        </div>
+        <div class="main-promo__item  main-promo__item--pic">
+          <figure class="main-promo__img"><img src="img/ginal.png" alt=""></figure>
+        </div>
+        <div class="main-promo__item">
+          <div class="main-promo__text">В парковой зоне имеется 3 терренкура, зоны отдыха для взрослых и детей, изысканные беседки, смотровая площадка, искусственный водопад. Ландшафтный дизайн представлен множеством декоративных насаждений: голубые ели,
+            березы, сосны, ивы, липы, туи, орех и различными кустарниками: дрок, гортензия, солнцесвет, гибискус, глициния, ракитник, форзиция, скумпия, тамарикс, розы.
+          </div>
+          <a class="btn  btn--orange" href="#">Подробнее о санатории</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="main-video">
+      <div class="main-video__slider  js_video_slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="container">
+              <div class="main-video__title">
+                Видео о санатории &laquo;Джинал&raquo;
+              </div>
+              <div class="main-video__time">1:35</div>
+              <a class="main-video__link" data-fancybox href="https://www.youtube.com/watch?v=ddFvjfvPnqk"><img src="img/play.png" alt=""></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container">
+              <div class="main-video__title">
+                Видео о санатории &laquo;Джинал&raquo;
+              </div>
+              <div class="main-video__time">1:35</div>
+              <a class="main-video__link" data-fancybox href="https://www.youtube.com/watch?v=ddFvjfvPnqk"><img src="img/play.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <div class="main-info">
+      <div class="container">
+        <div class="main-info__news">
+          <div class="main-info__header">
+            <h2 class="main-info__title">Новости</h2>
+            <a class="btn  btn--orange" href="#">Все новости</a>
+          </div>
+          <div class="main-news">
+            <a class="main-news__item" href="#">
+              <figure class="main-news__img"><img src="img/news1.jpg" alt=""></figure>
+              <div class="main-news__description">
+                <div class="main-news__title">Сезон чудесных цен</div>
+                <div class="main-news__text">С 09.01.2017 года по 05.03.2017 года проводится сезонная акция 5% скидка на санаторно-курортные путевки по всем категориям номеров с базовым и расширенным комплексом медицинских услуг</div>
+              </div>
+            </a>
+            <a class="main-news__item" href="#">
+              <figure class="main-news__img"><img src="img/news1.jpg" alt=""></figure>
+              <div class="main-news__description">
+                <div class="main-news__title">Сезон чудесных цен</div>
+                <div class="main-news__text">С 09.01.2017 года по 05.03.2017 года проводится сезонная акция 5% скидка на санаторно-курортные путевки по всем категориям номеров с базовым и расширенным комплексом медицинских услуг</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="main-info__stock">
+          <div class="main-info__header">
+            <h2 class="main-info__title  main-info__title--orange">Акции</h2>
+            <a class="btn  btn--orange" href="#">Все акции</a>
+          </div>
+          <div class="main-stock">
+            <div class="stock-slider  js_stock-slider">
+              <div class="swiper-wrapper">
+                <div class="stock-slider__item  swiper-slide">
+                  <div class="stock-slider__top">
+                    <div class="stock-slider__title">
+                      <a class="stock-slider__link" href="#">Сезон чудесных цен</a>
+                    </div>
+                    <div class="stock-slider__text">С 09.01.2017 года по 05.03.2017 года проводится сезонная акция 5% скидка на санаторно-курортные путевки по всем категориям номеров с базовым и расширенным комплексом медицинских услуг</div>
+                  </div>
+                  <figure class="stock-slider__bottom"><img src="img/stock1.jpg" alt=""></figure>
+                </div>
+                <div class="stock-slider__item  swiper-slide">
+                  <div class="stock-slider__top">
+                    <div class="stock-slider__title">
+                      <a class="stock-slider__link" href="#">Сезон чудес</a>
+                    </div>
+                    <div class="stock-slider__text">С 09.01.2017 года по 05.03.2017 года проводится сезонная акция 5% скидка на санаторно-курортные путевки по всем категориям номеров с базовым и расширенным комплексом медицинских услуг</div>
+                  </div>
+                  <figure class="stock-slider__bottom"><img src="img/stock1.jpg" alt=""></figure>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="main-gallery">
+      <div class="container">
+        <div class="section-header  section-header--no-line">
+          <h2 class="section-header__title  section-header__title--white">Фотографии санатория</h2>
+          <div class="section-header__btn  section-header__btn--transparent">
+            <a class="btn  btn--transparent  btn--photo-icon  btn--section-header" href="#">фотогалерея</a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-slider  js_gallery-slider">
+        <div class="swiper-wrapper">
+          <div class="gallery-slider__item  swiper-slide"><img src="img/gallery1.jpg" alt=""></div>
+          <div class="gallery-slider__item  swiper-slide"><img src="img/gallery1.jpg" alt=""></div>
+          <div class="gallery-slider__item  swiper-slide"><img src="img/gallery1.jpg" alt=""></div>
+          <div class="gallery-slider__item  swiper-slide"><img src="img/gallery1.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <ul class="footer-menu">
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="#">Цены</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="#">Лечение</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="#">Отдых</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="#">Питание</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__title">
+            <span>&copy; 2013-2017 Официальный сайт ОАО &laquo;Санаторий Джинал&raquo;</span>
+            <div class="social">
+              <a class="social__btn  social__btn--vk" href="#"></a>
+              <a class="social__btn  social__btn--ok" href="#"></a>
+            </div>
+          </div>
+          <div class="footer__info">
+            <ul class="footer-nav">
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Отзывы</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Преимущества</a>
+              </li>
+            </ul>
+            <ul class="footer-nav">
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Новости и акции</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Нормативные документы</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__contacts">
+            <a class="btn  btn--bg-orange  btn--book-footer" href="#">Забронировать</a>
+            <div class="footer__wrapper">
+              <div class="contacts  contacts--footer">
+                <a class="contacts__phone  contacts__phone--black" href="tel:88005006775">8 (800) 500 6775</a>
+                <div class="contacts__text  contacts__text--black">Бесплатно по России</div>
+              </div>
+              <div class="developer">Разработка сайта -
+                <a class="developer__link" href="http://webelement.ru"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__text">Территориальный орган Федеральной службы по надзору в сфере здравоохранения по Ставропольскому краю, 355012, г.Ставрополь, ул.Голенева, 67 "Б", тел: 8 (8652) 29-60-27, факс: 8 (8652) 26-15-21 Управление Федеральной службы по
+          надзору в сфере защиты прав потребителей и благополучия человека по Ставропольскому краю, 355008, г.Ставрополь, пер.Фадеева, 4, тел: 8 (8652) 29-86-39, факс: 8 (8652) 29-86-41. Комитет Ставропольского края по пищевой и перерабатывающей
+          промышленности, торговле и лицензированию, 355029, г. Ставрополь, ул. Ленина, 415 "Д", тел: 8 (8652) 56-65-78, факс: 8 (8652) 56-66-05.</div>
+        <div class="footer__warning">Имеются противопоказания. Необходима консультация специалиста.</div>
+
+      </div>
+    </footer>
+
+    <div class="popup-search  js_popup-search">
+      <form class="popup-search__form  js_popup-search__form" action="/" method="post">
+          <a class="close-btn  js_search-close" href="#"></a>
+          <input class="popup-search__input-search" id="search" type="search" name="search" placeholder="Поиск" autofocus="autofocus" required="true">
+          <button class="popup-search__btn" type="submit" name="submit-search"></button>
+      </form>
+    </div>
+
+    <div class="cookies-popup">
+      <div class="cookies-popup__text">Наш Сайт <a href="/privacy_policy/" target="_blank">использует cookie-файлы</a> для того, чтобы отличить Вас от других пользователей нашего ресурса.</div>
+      <a href="#" class="cookies-popup__btn">Ok</a>
+    </div>
+
+
+    <script src="js/jquery-3.2.1.min.js" charset="utf-8"></script>
+    <script src="js/swiper.jquery.min.js" charset="utf-8"></script>
+    <script src="js/jquery.fancybox.min.js" charset="utf-8"></script>
+    <script src="js/jquery.maskedinput.js" charset="utf-8"></script>
+    <script src="js/js.cookie.js" charset="utf-8"></script>
+    <script src="js/slick.min.js" charset="utf-8"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
+
+<!--
+<i class="sprite sprite-balcony"></i>
+<i class="sprite sprite-bear-orange"></i>
+<i class="sprite sprite-bear-white"></i>
+<i class="sprite sprite-beds"></i>
+<i class="sprite sprite-big-bear-orange"></i>
+<i class="sprite sprite-camera"></i>
+<i class="sprite sprite-check"></i>
+<i class="sprite sprite-check-active"></i>
+<i class="sprite sprite-clock"></i>
+<i class="sprite sprite-clock-big"></i>
+<i class="sprite sprite-clock-small"></i>
+<i class="sprite sprite-clock-white"></i>
+<i class="sprite sprite-family"></i>
+<i class="sprite sprite-fridge"></i>
+<i class="sprite sprite-iron"></i>
+<i class="sprite sprite-mail"></i>
+<i class="sprite sprite-mini-marker"></i>
+<i class="sprite sprite-ok"></i>
+<i class="sprite sprite-pen"></i>
+<i class="sprite sprite-percent"></i>
+<i class="sprite sprite-percent-white"></i>
+<i class="sprite sprite-phone"></i>
+<i class="sprite sprite-photo"></i>
+<i class="sprite sprite-pot"></i>
+<i class="sprite sprite-print"></i>
+<i class="sprite sprite-radio"></i>
+<i class="sprite sprite-ruble-orange"></i>
+<i class="sprite sprite-ruble-orange-big"></i>
+<i class="sprite sprite-ruble-white"></i>
+<i class="sprite sprite-search"></i>
+<i class="sprite sprite-shower"></i>
+<i class="sprite sprite-square"></i>
+<i class="sprite sprite-tv"></i>
+<i class="sprite sprite-user"></i>
+<i class="sprite sprite-vk"></i>
+<i class="sprite sprite-zoom"></i>
+  -->

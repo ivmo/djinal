@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Калькулятор путевки</title>
+  </head>
+  <body>
+
+    <header class="main-header  main-header--static" id="header">
+      <div class="container">
+        <div class="main-header__top">
+          <div class="main-header__left">
+            <figure class="main-header__logo">
+              <a href="#"><img src="img/logo.png" alt=""></a>
+            </figure>
+            <div class="main-header__text">
+              <div class="main-header__small-title">Официальный сайт
+                <span>Санатория &laquo;Джинал&raquo;</span>
+              </div>
+              <div class="main-header__title">Санаторий Джинал</div>
+              <div class="main-header__city">г. Кисловодск</div>
+            </div>
+          </div>
+          <div class="main-header__right">
+            <div class="main-header__info">
+              <a class="btn  btn--book  btn--book-header  btn--bg-orange" href="#">Забронировать</a>
+              <div class="main-header__btns-wrapper">
+                <div class="search  js_search-link">
+                  <a class="search__link" href="#">Поиск</a>
+                </div>
+                <a class="main-header__link  js_question" href="#">Задать вопрос</a>
+              </div>
+            </div>
+            <div class="contacts">
+              <a class="contacts__phone" href="tel:88005006775">8 (800) 500 6775</a>
+              <div class="contacts__text">Бесплатно по России</div>
+            </div>
+          </div>
+
+        </div>
+        <nav class="main-nav" id="main-nav">
+          <a class="hamburger" id="hamburger" href="">
+            <span></span>
+          </a>
+          <ul class="main-nav__list" id="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">О санатории</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Путевки</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Цены</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--drop">
+              <a class="main-nav__link" href="#">Номера</a>
+              <ul class="main-nav__sub-menu">
+                  <li class="main-nav__item">
+                    <a href="#">Подменю 1</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="#">Подменю 2</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="#">Подменю 3</a>
+                  </li>
+              </ul>
+              <span class="main-nav__subtoggle"></span>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link  main-nav__link--active" href="#">Лечение</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Отдых</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Питание</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Отзывы</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="content-header  content-header--calc">
+      <div class="container">
+        <ul class="breadcrumbs  breadcrumbs--mb">
+          <li class="breadcrumbs__title">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__title">Калькулятор путевки</li>
+        </ul>
+        <h1 class="content-header__title">Калькулятор путевки</h1>
+      </div>
+    </div>
+
+    <div class="content-wrapper  content-wrapper--calc">
+      <div class="container  content-wrapper__column">
+        <div class="content  content--main  content--wide" id="article">
+          <div class="steps">
+            <form action="/" method="post">
+              <div class="steps__title">Шаг 1 из 4. Выберите дату заезда и продолжительность путевки</div>
+              <div class="steps__item  steps__item--padding">
+                <div class="calendar">
+                  <div class="calendar__top">
+                    <div class="calendar__title">Дата заезда</div>
+                    <div class="calendar__nav"></div>
+                  </div>
+                  <div class="calendar__content">
+                    <div id="calendar"></div>
+                    <div class="dates--settings">
+                      <div class="dates--settings--section">
+                        <select id="period">
+                          <option value="custom"></option>
+                          <option value="last7"></option>
+                          <option value="last30"></option>
+                        </select>
+                      </div>
+                      <div class="dates--settings--section">
+                        <input type="text" id="start_date"/>
+                        <input type="text" id="end_date"/>
+                      </div>
+                      <div class="dates--settings--section">
+                        <button id="clear"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="calendar__text">
+                    <p>Нажмите желаемые даты начала и окончания путевки</p>
+                    <p>Продолжительность пктевки:<span>
+                        12 дней</span>
+                    </p>
+                  </div>
+                  <div class="calendar-range"></div>
+                </div>
+              </div>
+              <div class="steps__title">Шаг 2 из 4. Выберите номер</div>
+              <div class="steps__item">
+                <div class="rooms-gallery">
+                  <div class="rooms-gallery__item">
+                    <label>
+                    <figure class="rooms-gallery__pic"><img src="img/room-type1.jpg" alt=""></figure>
+                    <div class="rooms-gallery__info">
+                      <div class="rooms-gallery__title">Двухместный Твин</div>
+                      <a class="rooms-gallery__link" href="#">Подробнее</a>
+                      <input type="radio" name="room" value="room1">
+                        <!-- <span class="rooms-gallery__btn btn btn--orange">Выбрать</span> -->
+                    </div>
+                    </label>
+                  </div>
+                  <div class="rooms-gallery__item">
+                    <label>
+                    <figure class="rooms-gallery__pic"><img src="img/room-type1.jpg" alt=""></figure>
+                    <div class="rooms-gallery__info">
+                      <div class="rooms-gallery__title">Двухместный Твин</div>
+                      <a class="rooms-gallery__link" href="#">Подробнее</a>
+                      <input type="radio" name="room" value="room1">
+                        <!-- <span class="rooms-gallery__btn btn btn--orange">Выбрать</span> -->
+                    </div>
+                    </label>
+                  </div>
+                  <div class="rooms-gallery__item">
+                    <label>
+                    <figure class="rooms-gallery__pic"><img src="img/room-type1.jpg" alt=""></figure>
+                    <div class="rooms-gallery__info">
+                      <div class="rooms-gallery__title">Двухместный Твин</div>
+                      <a class="rooms-gallery__link" href="#">Подробнее</a>
+                      <input type="radio" name="room" value="room1">
+                        <!-- <span class="rooms-gallery__btn btn btn--orange">Выбрать</span> -->
+                    </div>
+                    </label>
+                  </div>
+                  <div class="rooms-gallery__item">
+                    <label>
+                    <figure class="rooms-gallery__pic"><img src="img/room-type1.jpg" alt=""></figure>
+                    <div class="rooms-gallery__info">
+                      <div class="rooms-gallery__title">Двухместный Твин</div>
+                      <a class="rooms-gallery__link" href="#">Подробнее</a>
+                      <input type="radio" name="room" value="room1">
+                        <!-- <span class="rooms-gallery__btn btn btn--orange">Выбрать</span> -->
+                    </div>
+                    </label>
+                  </div>
+                  <div class="rooms-gallery__item">
+                    <label>
+                    <figure class="rooms-gallery__pic"><img src="img/room-type1.jpg" alt=""></figure>
+                    <div class="rooms-gallery__info">
+                      <div class="rooms-gallery__title">Двухместный Твин</div>
+                      <a class="rooms-gallery__link" href="#">Подробнее</a>
+                      <input type="radio" name="room" value="room1">
+                        <!-- <span class="rooms-gallery__btn btn btn--orange">Выбрать</span> -->
+                    </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="steps__title">Шаг 3 из 4. Добавьте гостей и выберите путевку. Для выбранной длительности заезда подходят следующие виды путевок.</div>
+              <div class="steps__item">
+                <div class="steps-top">
+                  <div class="steps-top__title  steps-top__title--icon-user">1. Выберите количество гостей</div>
+                  <div class="steps-top__people">
+                    <div class="people-count">
+                      <div class="people-count__adult">
+                        <div class="people-count__title">Взрослых:</div>
+                        <div class="people-count__list">
+                          <label class="people-count__item"><input type="radio" name="adult" value="1">
+                            <span class="people-count__pic-adult  people-count__pic-adult--1"></span>
+                          </label>
+                          <label class="people-count__item"><input type="radio" name="adult" value="2">
+                            <span class="people-count__pic-adult  people-count__pic-adult--2"></span>
+                          </label>
+                          <label class="people-count__item"><input type="radio" name="adult" value="3">
+                            <span class="people-count__pic-adult  people-count__pic-adult--3"></span>
+                          </label>
+                          <label class="people-count__item"><input type="radio" name="adult" value="4">
+                            <span class="people-count__pic-adult  people-count__pic-adult--4"></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="people-count__children">
+                        <div class="people-count__title">Детей (5-14 лет):</div>
+                        <div class="people-count__list">
+                          <label class="people-count__item"><input type="radio" name="children" value="1">
+                            <span class="people-count__pic-children  people-count__pic-children--1"></span>
+                          </label>
+                          <label class="people-count__item"><input type="radio" name="children" value="2">
+                            <span class="people-count__pic-children  people-count__pic-children--2"></span>
+                          </label>
+                          <label class="people-count__item"><input type="radio" name="children" value="3">
+                            <span class="people-count__pic-children  people-count__pic-children--3"></span>
+                          </label>
+                          <label class="people-count__item"><input type="radio" name="children" value="4">
+                            <span class="people-count__pic-children  people-count__pic-children--4"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="steps-top__info">Дети до 4 лет проживают бесплатно на дополнительном месте</div>
+                  </div>
+                </div>
+                <div class="steps__tab">
+                  <div class="steps-top">
+                    <div class="steps-top__title  steps-top__title--icon-user">2. Первый взрослый: Здоровая спина
+                      <a class="steps-top__link" href="#">Изменить путевку</a>
+                    </div>
+                  </div>
+                  <div class="steps__program-choice">
+                    <div class="section-nav  section-nav--calc  section-nav--padding">
+                      <a class="section-nav__item  section-nav__item--check  section-nav__item--tabs  section-nav__item--active-tab" href="#">Оздоровительная</a>
+                      <a class="section-nav__item  section-nav__item--check  section-nav__item--tabs" href="#">Базовая</a>
+                      <a class="section-nav__item  section-nav__item--check  section-nav__item--tabs" href="#">Расширенная</a>
+                      <a class="section-nav__item  section-nav__item--check  section-nav__item--tabs" href="#">Специальная</a>
+                    </div>
+                    <div class="rooms-gallery">
+                      <div class="rooms-gallery__item">
+                        <label>
+                        <div class="rooms-gallery__info">
+                          <div class="rooms-gallery__title  rooms-gallery__title--program">
+                            <a href="#">Правильная осанка</a>
+                          </div>
+                          <div class="rooms-gallery__text">Кроме широкого спектра диагностических и лечебных процедур, предусмотренных в лечебных программах, санаторий предлагает дополнительные платные медицинские услуги</div>
+                          <input type="radio" name="program" value="program1">
+                            <!-- <span class="rooms-gallery__btn btn btn--orange">Выбрать</span> -->
+                        </div>
+                        </label>
+                      </div>
+                      <div class="rooms-gallery__item">
+                        <label>
+                        <div class="rooms-gallery__info">
+                          <div class="rooms-gallery__title  rooms-gallery__title--program">
+                            <a href="#">Правильная осанка</a>
+                          </div>
+                          <div class="rooms-gallery__text">Кроме широкого спектра диагностических и лечебных процедур, предусмотренных в лечебных программах, санаторий предлагает дополнительные платные медицинские услуги</div>
+                          <input type="radio" name="program" value="program1">
+                            <!-- <span class="rooms-gallery__btn btn btn--orange">Выбрать</span> -->
+                        </div>
+                        </label>
+                      </div>
+                      <div class="rooms-gallery__item">
+                        <label>
+                        <div class="rooms-gallery__info">
+                          <div class="rooms-gallery__title  rooms-gallery__title--program">
+                            <a href="#">Правильная осанка</a>
+                          </div>
+                          <div class="rooms-gallery__text">Кроме широкого спектра диагностических и лечебных процедур, предусмотренных в лечебных программах, санаторий предлагает дополнительные платные медицинские услуги</div>
+                          <input type="radio" name="program" value="program1">
+                            <!-- <span class="rooms-gallery__btn btn btn--orange">Выбрать</span> -->
+                        </div>
+                        </label>
+                      </div>
+                      <div class="rooms-gallery__item">
+                        <label>
+                        <div class="rooms-gallery__info">
+                          <div class="rooms-gallery__title  rooms-gallery__title--program">
+                            <a href="#">Правильная осанка</a>
+                          </div>
+                          <div class="rooms-gallery__text">Кроме широкого спектра диагностических и лечебных процедур, предусмотренных в лечебных программах, санаторий предлагает дополнительные платные медицинские услуги</div>
+                          <input type="radio" name="program" value="program1">
+                            <!-- <span class="rooms-gallery__btn btn btn--orange">Выбрать</span> -->
+                        </div>
+                        </label>
+                      </div>
+                      <div class="rooms-gallery__item">
+                        <label>
+                        <div class="rooms-gallery__info">
+                          <div class="rooms-gallery__title  rooms-gallery__title--program">
+                            <a href="#">Правильная осанка</a>
+                          </div>
+                          <div class="rooms-gallery__text">Кроме широкого спектра диагностических и лечебных процедур, предусмотренных в лечебных программах, санаторий предлагает дополнительные платные медицинские услуги</div>
+                          <input type="radio" name="program" value="program1">
+                            <!-- <span class="rooms-gallery__btn btn btn--orange">Выбрать</span> -->
+                        </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="steps__tab">
+                  <div class="steps-top">
+                    <div class="steps-top__title  steps-top__title--icon-user">2. Первый взрослый: Здоровая спина
+                      <a class="steps-top__link" href="#">Изменить путевку</a>
+                    </div>
+                  </div>
+                  <div class="steps__program-choice">
+                    <div class="section-nav  section-nav--calc  section-nav--padding">
+                      <a class="section-nav__item  section-nav__item--check  section-nav__item--tabs  section-nav__item--active-tab" href="#">Оздоровительная</a>
+                      <a class="section-nav__item  section-nav__item--check  section-nav__item--tabs" href="#">Базовая</a>
+                      <a class="section-nav__item  section-nav__item--check  section-nav__item--tabs" href="#">Расширенная</a>
+                      <a class="section-nav__item  section-nav__item--check  section-nav__item--tabs" href="#">Специальная</a>
+                    </div>
+                    <div class="rooms-gallery">
+                      <div class="rooms-gallery__item">
+                        <label>
+                        <div class="rooms-gallery__info">
+                          <div class="rooms-gallery__title  rooms-gallery__title--program">
+                            <a href="#">Правильная осанка</a>
+                          </div>
+                          <div class="rooms-gallery__text">Кроме широкого спектра диагностических и лечебных процедур, предусмотренных в лечебных программах, санаторий предлагает дополнительные платные медицинские услуги</div>
+                          <input type="radio" name="program2" value="program5">
+                            <!-- <span class="rooms-gallery__btn btn btn--orange">Выбрать</span> -->
+
+                        </div>
+                        </label>
+                      </div>
+                      <div class="rooms-gallery__item">
+                        <label>
+                        <div class="rooms-gallery__info">
+                          <div class="rooms-gallery__title  rooms-gallery__title--program">
+                            <a href="#">Правильная осанка</a>
+                          </div>
+                          <div class="rooms-gallery__text">Кроме широкого спектра диагностических и лечебных процедур, предусмотренных в лечебных программах, санаторий предлагает дополнительные платные медицинские услуги</div>
+                          <input type="radio" name="program2" value="program5">
+                            <!-- <span class="rooms-gallery__btn btn btn--orange">Выбрать</span> -->
+
+                        </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="steps__title">Шаг 4 из 4. Стоимость</div>
+              <div class="steps__item">
+                <div class="steps-top">
+                  <div class="steps-top__title  steps-top__title--menu">Питание</div>
+                  <div class="steps-top__people  steps-top__people--menu">
+                    <div class="steps-top__title  steps-top__title--icon-user">Первый взрослый</div>
+                    <div>
+                      <div class="steps-top__menu">
+                        <label class="steps-top__feature">
+                          <input type="radio" name="menu1" value="menu1" checked>
+                          <span class="outer">
+                            <span class="inner"></span>
+                          </span>
+                          <span>Столовая</span>
+                        </label>
+                        <label class="steps-top__feature">
+                          <input type="radio" name="menu1" value="menu2">
+                          <span class="outer">
+                            <span class="inner"></span>
+                          </span>
+                          <span>Ресторан</span>
+                        </label>
+                      </div>
+                      <div class="steps-top__menu">
+                        <label class="steps-top__feature">
+                          <input type="radio" name="menu1" value="menu3">
+                          <span class="outer">
+                            <span class="inner"></span>
+                          </span>
+                          <span>Завтрак столовая</span>
+                        </label>
+                        <label class="steps-top__feature">
+                          <input type="radio" name="menu1" value="menu4">
+                          <span class="outer">
+                            <span class="inner"></span>
+                          </span>
+                          <span>Завтрак ресторан</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="steps-top__people  steps-top__people--menu">
+                    <div class="steps-top__title  steps-top__title--icon-user">Второй взрослый</div>
+                    <div>
+                      <div class="steps-top__menu">
+                        <label class="steps-top__feature">
+                          <input type="radio" name="menu1" value="menu1" checked>
+                          <span class="outer">
+                            <span class="inner"></span>
+                          </span>
+                          <span>Столовая</span>
+                        </label>
+                        <label class="steps-top__feature">
+                          <input type="radio" name="menu1" value="menu2">
+                          <span class="outer">
+                            <span class="inner"></span>
+                          </span>
+                          <span>Ресторан</span>
+                        </label>
+                      </div>
+                      <div class="steps-top__menu">
+                        <label class="steps-top__feature">
+                          <input type="radio" name="menu1" value="menu3">
+                          <span class="outer">
+                            <span class="inner"></span>
+                          </span>
+                          <span>Завтрак столовая</span>
+                        </label>
+                        <label class="steps-top__feature">
+                          <input type="radio" name="menu1" value="menu4">
+                          <span class="outer">
+                            <span class="inner"></span>
+                          </span>
+                          <span>Завтрак ресторан</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="steps-total">
+                  <div class="steps-total__info">
+                    <div class="steps-total__item">
+                      <div class="steps-total__title">Программы</div>
+                      <div class="steps-total__text">1. Первый взрослый: Название программы</div>
+                      <div class="steps-total__text">2. Второй взрослый: Название программы</div>
+                    </div>
+                    <div class="steps-total__item">
+                      <div class="steps-total__title">Питание</div>
+                      <div class="steps-total__text">1. Первый взрослый: Завтрак в постель</div>
+                      <div class="steps-total__text">2. Второй взрослый: Ресторан</div>
+                    </div>
+                    <div class="steps-total__count">
+                      Стоимость с учетом питания (столовая), проживания и лечения.
+                      <b>118 200</b>
+                      <span>Сумма не учитывает действующие акции и скидки.</span>
+                    </div>
+                  </div>
+                  <div class="steps-total__promo  steps-total__promo--icon-cake">Благодарим за расчет стоимости путевки! Желаем вам приятного отдыха в санатории «Джинал»!</div>
+                </div>
+                <div class="steps__description">Отправьте заявку на путевку, и наш менеджер свяжется с Вами, чтобы ответить на вопросы и забронировать номер.</div>
+                <div class="steps__fields-list">
+                  <div class="field-text  steps__field">
+                    <input class="field-text__input  field-text__input--dark" id="name" type="text" name="name" required="true">
+                    <label class="field-text__label  field-text__label--dark" for="name" data-first="Имя"></label>
+                  </div>
+                  <div class="field-text  steps__field">
+                    <input class="field-text__input  field-text__input--phone  js_field-text__input  field-text__input--dark" id="phone" type="tel" name="phone" required="true">
+                    <label class="field-text__label  field-text__label--dark" for="phone" data-first="Телефон"></label>
+                  </div>
+                  <div class="field-text  steps__field">
+                    <input class="field-text__input  field-text__input--dark" id="email" type="text" name="email" required="true">
+                    <label class="field-text__label  field-text__label--dark" for="email" data-first="E-mail"></label>
+                  </div>
+                  <div class="field-text  steps__field">
+                    <input class="field-text__input  field-text__input--dark" id="city" type="text" name="city" required="true">
+                    <label class="field-text__label  field-text__label--dark" for="city" data-first="Город"></label>
+                  </div>
+                  <div class="field-text field-text--radio steps__field">
+                    <label class="field-text__checkbox"><input type="checkbox" name="transfer" value="jet"><span></span>Нужен трансфер аэропорт</label>
+                  </div>
+                  <div class="field-text field-text--radio steps__field">
+                    <label class="field-text__checkbox"><input type="checkbox" name="transfer" value="train"><span></span>Нужен трансфер Ж/Д</label>
+                  </div>
+                  <div class="field-text  field-text--area-calc">
+                    <textarea class="field-text__textarea  field-text__textarea--dark" id="notes" name="notes" rows="8" cols="80"></textarea>
+                    <label class="field-text__label  field-text__label--dark  field-text__label--big" for="notes" data-first="Примечания"></label>
+                  </div>
+                  <div class="field-text">
+                    <label class="field-text__checkbox"><input type="checkbox" name="data" value="data" checked required><span></span>Согласен на обработку <a href="#">персональных данных</a></label>
+                  </div>
+                  <div class="steps__fields-list  steps__fields-list--reverse  steps__fields-list--bottom">
+                    <div class="steps__adds">
+                      <a href="#">Отправить отчет на почту</a>
+                      <a href="#">Распечатать расчет</a>
+                    </div>
+                    <button class="btn btn--bg-orange" type="submit">Отправить заявку</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <aside class="sidebar  sidebar--narrow  sidebar--calc">
+          <div class="steps-nav" id="aside1">
+            <div class="steps-nav__title">Можно вернуться к любому шагу</div>
+            <div class="steps-nav__item">
+              <a class="steps-nav__link" href="#">Шаг 1. Дата</a>
+              <div class="steps-nav__details">
+                <span>Дата заезда:
+                </span>15 мая 2017</div>
+              <div class="steps-nav__details">
+                <span>Продолжительность:
+                </span>12 дней</div>
+            </div>
+            <div class="steps-nav__item">
+              <a class="steps-nav__link" href="#">Шаг 2. Номер</a>
+              <div class="steps-nav__details">Люкс 209</div>
+            </div>
+            <div class="steps-nav__item">
+              <a class="steps-nav__link" href="#">Шаг 3. Путевка</a>
+              <div class="steps-nav__details">1. Взрослый: Здоровая спина</div>
+              <div class="steps-nav__details">2. Детский: Детский лагерь</div>
+            </div>
+            <div class="steps-nav__item">
+              <a class="steps-nav__link  steps-nav__link--current" href="#">Шаг 4. Стоимость</a>
+              <div class="steps-nav__details">Вы можете вернуться к любому этапу и изменить параметры</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <ul class="footer-menu">
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="#">Цены</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="#">Лечение</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="#">Отдых</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="#">Питание</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__title">
+            <span>&copy; 2013-2017 Официальный сайт ОАО &laquo;Санаторий Джинал&raquo;</span>
+            <div class="social">
+              <a class="social__btn  social__btn--vk" href="#"></a>
+              <a class="social__btn  social__btn--ok" href="#"></a>
+            </div>
+          </div>
+          <div class="footer__info">
+            <ul class="footer-nav">
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Отзывы</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Преимущества</a>
+              </li>
+            </ul>
+            <ul class="footer-nav">
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Новости и акции</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Нормативные документы</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__contacts">
+            <a class="btn  btn--bg-orange  btn--book-footer" href="#">Забронировать</a>
+            <div class="footer__wrapper">
+              <div class="contacts  contacts--footer">
+                <a class="contacts__phone  contacts__phone--black" href="tel:88005006775">8 (800) 500 6775</a>
+                <div class="contacts__text  contacts__text--black">Бесплатно по России</div>
+              </div>
+              <div class="developer">Разработка сайта -
+                <a class="developer__link" href="http://webelement.ru"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__text">Территориальный орган Федеральной службы по надзору в сфере здравоохранения по Ставропольскому краю, 355012, г.Ставрополь, ул.Голенева, 67 "Б", тел: 8 (8652) 29-60-27, факс: 8 (8652) 26-15-21 Управление Федеральной службы по
+          надзору в сфере защиты прав потребителей и благополучия человека по Ставропольскому краю, 355008, г.Ставрополь, пер.Фадеева, 4, тел: 8 (8652) 29-86-39, факс: 8 (8652) 29-86-41. Комитет Ставропольского края по пищевой и перерабатывающей
+          промышленности, торговле и лицензированию, 355029, г. Ставрополь, ул. Ленина, 415 "Д", тел: 8 (8652) 56-65-78, факс: 8 (8652) 56-66-05.</div>
+        <div class="footer__warning">Имеются противопоказания. Необходима консультация специалиста.</div>
+
+      </div>
+    </footer>
+
+    <div class="popup-search  js_popup-search">
+      <form class="popup-search__form  js_popup-search__form" action="/" method="POST">
+        <a class="close-btn  js_search-close" href="#"></a>
+        <input class="popup-search__input-search" id="search" type="search" name="search" placeholder="Поиск" autofocus="autofocus" required="true">
+        <button class="popup-search__btn" type="submit" name="submit-search"></button>
+      </form>
+    </div>
+
+
+    <div style="display: none;">
+      <div class="popup-book" id="popup-book">
+        <div class="box-modal_close arcticmodal-close"></div>
+        <form class="ask-form" action="/" method="get">
+          <h2 class="ask-form__title">Есть вопросы?</h2>
+          <div class="field-text">
+            <input class="field-text__input  field-text__input--bg-white" id="name" type="text" name="name" required="true">
+            <label class="field-text__label" for="name" data-first="Имя"></label>
+          </div>
+          <div class="field-text">
+            <input class="field-text__input  field-text__input--phone  field-text__input--bg-white  js_field-text__input" id="phone" type="tel" name="phone" required="true">
+            <label class="field-text__label" for="phone" data-first="Ваш телефон"></label>
+          </div>
+          <div class="field-text">
+            <input class="field-text__input  field-text__input--bg-white" id="org" type="text" name="org" required="true">
+            <label class="field-text__label" for="org" data-first="Организация"></label>
+          </div>
+          <div class="field-text  field-text--area-ask">
+            <textarea class="field-text__textarea  field-text__textarea--white  field-text__textarea--bg-white" id="comment" name="comment" rows="8" cols="80" required="true"></textarea>
+            <label class="field-text__label" for="comment" data-first="Ваш вопрос"></label>
+          </div>
+          <div class="field-text  field-text--input-radio">
+            <label class="field-text__radio-label">
+              <input type="radio" name="capcha" value="1">
+              <span>
+                <span></span>
+              </span>Я человек
+            </label>
+          </div>
+          <div class="field-text  field-text--policy">
+            <label class="field-text__checkbox  field-text__checkbox--white"><input type="checkbox" name="data" value="data" checked required><span></span>Согласен на обработку <a href="#">персональных данных</a></label>
+          </div>
+          <button class="btn  btn--bg-orange  btn--ask" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+    <div style="display: none;">
+      <div class="popup-note" id="popup-note">
+        <div class="box-modal_close arcticmodal-close"></div>
+        <div class="popup-note__title">Заголовок окошка</div>
+        <div class="popup-note__text">Корпорация Apple заявила о прекращении производства плееров iPod nano и iPod shuffle. Как сообщает The Verge, компания закрыла страницы данных устройств. </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js" charset="utf-8"></script>
+    <script src="js/jquery-ui.min.js" charset="utf-8"></script>
+    <script src="js/jquery.ui.touch-punch.min.js" charset="utf-8"></script>
+    <script src="js/datepicker-ru.js" charset="utf-8"></script>
+    <script src="js/slider-range.js" charset="utf-8"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js" charset="utf-8"></script>
+    <script src="js/swiper.jquery.min.js" charset="utf-8"></script>
+    <script src="js/slick.min.js" charset="utf-8"></script>
+    <script src="js/jquery.fancybox.min.js" charset="utf-8"></script>
+    <script src="js/jquery.maskedinput.js" charset="utf-8"></script>
+    <script src="js/jquery.arcticmodal-0.3.min.js" charset="utf-8"></script>
+    <script src="js/js.cookie.js" charset="utf-8"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
+
+<!-- <form>
+  <fieldset>
+    <span class="star-cb-group">
+      <input type="radio" id="rating-5" name="rating" value="5"/>
+      <label for="rating-5">5</label>
+      <input type="radio" id="rating-4" name="rating" value="4" checked="checked"/>
+      <label for="rating-4">4</label>
+      <input type="radio" id="rating-3" name="rating" value="3"/>
+      <label for="rating-3">3</label>
+      <input type="radio" id="rating-2" name="rating" value="2"/>
+      <label for="rating-2">2</label>
+      <input type="radio" id="rating-1" name="rating" value="1"/>
+      <label for="rating-1">1</label>
+      <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear"/>
+      <label for="rating-0">0</label>
+    </span>
+  </fieldset>
+</form> -->

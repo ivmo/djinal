@@ -1,0 +1,33 @@
+.aside-feedback {
+  padding: 35px;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  background: $color-secondary url("../img/pattern.png");
+  margin-bottom: 20px;
+}
+
+.aside-feedback__title {
+  margin: 0;
+  color: $text-white;
+  font-size: $title-font--xxs;
+  line-height: $line-xlg;
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+
+  @media #{$tablet-width--md} {
+    text-align: center;
+  }
+}
+
+.aside-feedback__title--reviews {
+  margin-bottom: 10px;
+}
+
+.aside-feedback__text {
+  color: $text-white;
+  line-height: $line-md;
+  font-size: $font-md;
+  margin-bottom: 17px;
+}

@@ -1,0 +1,291 @@
+.gallery {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+  @media #{$tablet-width} {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+
+.gallery__item {
+  flex-basis: 30%;
+  margin: 0 10px;
+  margin-bottom: 30px;
+  border: 2px solid $gray--lightest;
+  border-radius: 12px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  &:hover {
+    border-color: $color-primary;
+
+    .gallery__img a:after {
+      opacity: 1;
+    }
+    .gallery__link {
+      text-decoration: none;
+    }
+    .gallery__feature {
+      border-color: transparent;
+    }
+    .gallery__description {
+      color: $text-white;
+    }
+    .gallery__price {
+      color: $text-white;
+
+      span {
+        color: $text-white;
+      }
+    }
+    .gallery__price--adult {
+
+      &:before {
+        background-position: -200px -53px;
+      }
+    }
+    .gallery__extention {
+      color: $text-white;
+
+      span {
+        color: $text-white;
+      }
+    }
+    .gallery__extention--kids {
+
+      &:before {
+        background-position: -80px -5px;
+      }
+    }
+
+  }
+
+  @media #{$tablet-width--md} {
+    flex-basis: 45%;
+  }
+
+  @media #{$mobile-width} {
+    flex-basis: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &--bg-orange {
+
+    &:hover {
+      border-color: $color-primary;
+      background: $color-primary url("../img/pattern.png");
+
+      .catalog-list__price--stock {
+        color: $text-white;
+      }
+      .catalog-list__extention--stock {
+        color: $text-white;
+
+        span {
+          color: $text-white;
+        }
+      }
+    }
+
+  }
+}
+
+
+.gallery__info {
+  padding: 15px;
+  background: $bg-white;
+
+  b {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: $text-dark;
+    font-size: $font-sm;
+    line-height: $line-md;
+  }
+}
+
+.gallery__advice {
+  margin-bottom: 10px;
+  color: $color-primary;
+  font-size: $font-sm;
+  line-height: $line-md;
+}
+
+.gallery__img {
+  position: relative;
+  margin: 0;
+  line-height: 0;
+
+  a {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      display: block;
+      width: 51px;
+      height: 51px;
+      background-image: url("../img/spritesheet.png");
+      background-repeat: no-repeat;
+      background-position: -200px -203px;
+      opacity: 0;
+      transition: all 0.4s;
+
+      @media #{$tablet-width--lg} {
+        opacity: 1;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: $bg-opacity--md;
+      opacity: 0;
+      transition: all 0.4s;
+
+      @media #{$tablet-width--lg} {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.gallery__img img {
+  width: 100%;
+}
+
+.gallery__title {
+  margin-bottom: 18px;
+  color: $text-blue;
+  font-family: 'Comfortaa';
+  font-weight: 400;
+  font-size: $font-lg;
+  line-height: $line-md;
+}
+
+.gallery__link {
+  font-family: 'Comfortaa';
+  font-weight: 400;
+  color: $text-blue;
+  font-size: $font-lg;
+  line-height: $line-md;
+}
+
+.gallery__text {
+  font-size: $font-sm;
+  line-height: $line-md;
+  color: $text-dark;
+}
+
+
+.gallery__feature {
+  padding: 10px 15px;
+  border-top: 2px solid $gray--lightest;
+}
+
+.gallery__price {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 6px;
+  font-size: $font-sm;
+  line-height: $line-md;
+  color: $color-secondary;
+
+
+  p {
+    margin: 0;
+    margin-bottom: 10px;
+
+    span {
+      font-size: $font-lg;
+      line-height: $line-md;
+      color: $color-primary;
+      font-weight: 400;
+    }
+  }
+}
+
+.gallery__price--adult {
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    margin-right: 12px;
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -162px -173px;
+  }
+}
+
+.gallery__extention--kids {
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 29px;
+    height: 28px;
+    margin-right: 12px;
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -41px -5px;
+  }
+}
+
+.gallery__description {
+  font-size: $font-xs;
+  line-height: $line-lg;
+  color: $color-secondary;
+}
+
+.gallery__extention {
+  position: relative;
+  padding-left: 40px;
+  font-size: $font-sm;
+  line-height: $line-md;
+  color: $color-secondary;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 29px;
+    height: 28px;
+    margin-right: 12px;
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+  }
+
+  span {
+    font-size: $font-lg;
+    line-height: $line-md;
+    color: $color-primary;
+    font-weight: 400;
+  }
+}

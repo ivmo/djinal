@@ -1,0 +1,16 @@
+.ask-form {
+  padding: 35px 15px;
+  background: $color-secondary url(../img/pattern.png);
+  border-radius: 12px;
+}
+
+.ask-form__title {
+  margin-bottom: 25px;
+  text-align: center;
+  color: $text-white;
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  font-size: $title-font--xxs;
+  line-height: $line-xlg;
+}

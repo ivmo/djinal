@@ -1,0 +1,71 @@
+.room-info {
+  flex-basis: 30%;
+  margin-bottom: 20px;
+  margin-top: -160px;
+
+  @media #{$desktop-width} {
+    margin-top: -60px;
+  }
+
+  @media #{$tablet-width--lg} {
+    margin-top: 0;
+  }
+}
+
+.room-info__pay {
+  margin-bottom: 32px;
+}
+
+.room-info__title {
+  margin-bottom: 5px;
+  padding-left: 40px;
+  text-transform: uppercase;
+  color: $color-secondary;
+	font-size: $font-sm;
+	line-height: $font-lg;
+  font-weight: 700;
+}
+
+.room-info__item {
+  position: relative;
+	padding-left: 40px;
+	margin-bottom: 35px;
+	font-weight: 400;
+	color: $color-secondary;
+	font-size: $font-sm;
+	line-height: $font-lg;
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}
+
+.room-info__text {
+  margin-bottom: 15px;
+  padding-left: 40px;
+}
+
+.room-info__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.room-info__pic {
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+
+  img {
+    max-width: 100%;
+  }
+}

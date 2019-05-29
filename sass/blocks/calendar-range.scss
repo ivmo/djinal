@@ -1,0 +1,81 @@
+.calendar-range {
+  margin-bottom: 70px;
+  border: none;
+  border-radius: 0;
+}
+
+.calendar-range.ui-slider {
+  margin-bottom: 70px;
+}
+
+.calendar-range.ui-widget.ui-widget-content {
+  border: none;
+}
+
+.calendar-range .ui-slider-pip .ui-slider-label {
+  display: none;
+}
+
+.calendar-range .ui-slider-pip {
+
+  &:first-child .ui-slider-label {
+    display: block;
+  }
+  &:last-child .ui-slider-label {
+    display: block;
+  }
+  &:nth-child(3) .ui-slider-label {
+    display: block;
+  }
+  &:nth-child(6) .ui-slider-label {
+    display: block;
+  }
+  &:nth-child(10) .ui-slider-label {
+    display: block;
+  }
+  &:nth-child(17) .ui-slider-label {
+    display: block;
+  }
+}
+
+.ui-slider-pips .ui-slider-line {
+  height: 5px !important;
+}
+.ui-slider-pips .ui-slider-label {
+  top: 8px !important;
+}
+
+.ui-slider-horizontal {
+  height: 10px;
+  background: linear-gradient(to bottom, #c3c3c3 0%, #ebebeb 75%);
+}
+
+// .calendar-range .ui-slider-handle,
+.calendar-range .ui-slider-range,
+.calendar-range .ui-slider-pip[class*=ui-slider-pip-selected] .ui-slider-line,
+.calendar-range .ui-slider-pip.ui-slider-pip-inrange .ui-slider-line {
+  background-color: $color-secondary;
+}
+
+.calendar-range .ui-slider-handle {
+  position: relative;
+  border: none;
+  width: 15px;
+  height: 32px;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -6px;
+    left: 1.5px;
+    width: 15px;
+    height: 32px;
+    background: url('../img/range-marker.png') no-repeat;
+    background-size: contain;
+  }
+}
+
+.calendar-range.ui-slider-float .ui-slider-tip {
+  margin-left: -10px;
+}

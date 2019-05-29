@@ -1,0 +1,18 @@
+.details {
+
+}
+
+.details__title {
+  color: $color-secondary;
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 24px;
+  font-size: $title-font;
+  line-height: $line-xlg;
+}
+
+.details__text {
+  color: $color-secondary;
+  line-height: $line-xlg;
+}

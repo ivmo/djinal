@@ -1,0 +1,23 @@
+.footnote {
+  padding-top: 17px;
+  border-top: 1px solid $gray--lg;
+}
+
+.footnote__title {
+  margin-bottom: 5px;
+  color: $color-secondary;
+  font-size: $font-xs;
+  line-height: $line-sm;
+}
+
+.footnote__list {
+  margin: 0;
+  padding-left: 15px;
+}
+
+.footnote__item {
+  margin-bottom: 5px;
+  color: $color-secondary;
+  font-size: $font-xs;
+  line-height: $line-sm;
+}

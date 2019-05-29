@@ -1,0 +1,61 @@
+.content-wrapper {
+  margin-bottom: 50px;
+
+  @media #{$tablet-width} {
+    margin-bottom: 0;
+  }
+}
+
+.content-wrapper--album {
+  margin-bottom: 30px;
+
+  @media #{$tablet-width} {
+    margin-bottom: 30px;
+  }
+}
+
+.content-wrapper__column {
+  display: flex;
+  flex-direction: row;
+
+  @media #{$tablet-width} {
+    flex-direction: column;
+  }
+
+  @media #{$mobile-width--xs} {
+    display: block;
+  }
+}
+
+.content-wrapper__column--contacts {
+
+  @media #{$tablet-width} {
+    display: block;
+  }
+}
+
+.content-wrapper__column--album {
+
+  @media #{$tablet-width--md} {
+    display: block;
+  }
+}
+
+.content-wrapper__column--rest {
+
+  @media #{$tablet-width--md} {
+    display: block;
+  }
+}
+
+.content-wrapper__room {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  @media #{$tablet-width--lg} {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,124 @@
+.main-promo {
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+
+	&--clear-bottom {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+
+		@media #{$tablet-width--md} {
+			flex-direction: column;
+		}
+	}
+}
+
+.main-promo__item {
+	flex: 1;
+
+	&--pic {
+
+		@media #{$tablet-width--md} {
+			display: none;
+		}
+	}
+}
+
+.main-promo__title {
+	margin: 0;
+	margin-bottom: 35px;
+	font-size: $title-font--sm;
+	line-height: $line-largest;
+	font-family: 'Comfortaa', Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+	color: $color-secondary;
+	text-transform: uppercase;
+
+	&--line {
+		position: relative;
+		padding: 0 70px;
+
+
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			border-top: 1px solid $color-secondary;
+		}
+
+		@media #{$tablet-width} {
+      margin-bottom: 15px;
+		}
+
+		@media #{$mobile-width--xs} {
+      padding: 0 30px;
+		}
+	}
+
+	&--stars {
+		margin-top: 40px;
+
+	&:before {
+		content: '';
+		display: block;
+		margin-bottom: 20px;
+		background: url('../img/stars.png') no-repeat;
+		background-position: center;
+	}
+  }
+
+	span {
+		position: relative;
+		display: block;
+		font-family: 'Comfortaa', Verdana, sans-serif;
+	  font-weight: 700;
+		text-align: center;
+		background: $bg-white;
+		z-index: 2;
+	}
+}
+
+.main-promo__text {
+	margin-bottom: 35px;
+	color: $color-secondary;
+	font-size: $font-md;
+	line-height: $title-font--md;
+
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+	&--cursive {
+		font-style: italic;
+	}
+	&--best-product {
+		padding-left: 97px;
+		background: url("../img/best.png") no-repeat;
+	}
+	&--comforta {
+		font-family: 'Comfortaa', Verdana, sans-serif;
+	  font-weight: 700;
+	}
+}
+
+.main-promo__img {
+	margin: 0;
+	padding: 0 15px;
+	text-align: center;
+
+	img {
+		max-width: 100%;
+	}
+}

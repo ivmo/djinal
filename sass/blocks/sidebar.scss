@@ -1,0 +1,22 @@
+.sidebar {
+  flex-basis: 32%;
+
+  @media #{$tablet-width} {
+    flex-basis: 70%;
+  }
+
+  @media #{$mobile-width--xs} {
+    flex-basis: auto;
+  }
+}
+
+.sidebar--narrow {
+  flex-basis: 24%;
+}
+
+.sidebar--calc {
+
+  @media #{$tablet-width--md} {
+    display: none;
+  }
+}

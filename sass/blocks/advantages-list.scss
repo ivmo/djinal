@@ -1,0 +1,130 @@
+@keyframes roll {
+  0% {
+    transform: scale(1);
+  },
+  50% {
+    transform: scale(1.2);
+  },
+  100% {
+    transform: scale(1);
+  }
+}
+
+.advantages-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  @media #{$tablet-width--md} {
+    flex-wrap: wrap;
+  }
+}
+
+.advantages-list--prices {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  @media #{$tablet-width--md} {
+    justify-content: center;
+  }
+}
+
+.advantages-list__item {
+  flex: 1;
+  min-width: 180px;
+  margin: 0 10px;
+  margin-bottom: 30px;
+}
+
+.advantages-list__item--prices {
+  flex: initial;
+  width: 25%;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0 20px;
+
+  @media #{$tablet-width--md} {
+    width: 50%;
+  }
+
+  @media #{$mobile-width--xs} {
+    width: 100%;
+  }
+
+  &:hover {
+
+  .advantages-list__img {
+      background: $bg-accent;
+      border-color: $bg-accent;
+
+      img {
+        animation: roll 0.4s cubic-bezier(0.05, 0.63, 1, 1);
+      }
+    }
+  }
+}
+
+.advantages-list__img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 122px;
+  height: 122px;
+  margin: auto;
+  margin-bottom: 15px;
+  border-radius: 100%;
+  border: 1px solid $bg-white;
+  text-align: center;
+  transition: all 0.3s;
+
+  &:hover {
+    background: $bg-accent;
+    border-color: $bg-accent;
+
+    img {
+      animation: roll 0.4s cubic-bezier(0.05, 0.63, 1, 1);
+    }
+  }
+
+  img {
+    max-width: 70px;
+  }
+}
+
+.advantages-list__img--prices {
+  border: none;
+  margin-bottom: 0;
+}
+
+.advantages-list__title {
+  margin-bottom: 15px;
+  font-family: 'Comfortaa';
+  font-weight: 400;
+  font-size: $font;
+  line-height: $line-xs;
+  color: $text-white;
+  text-align: center;
+}
+
+.advantages-list__text {
+  font-weight: 400;
+  font-size: $font-sm;
+  line-height: $line-md;
+  color: $text-white;
+  text-align: center;
+}
+
+.advantages-list__link {
+  font-weight: 400;
+  font-size: $font-sm;
+  line-height: $line-md;
+  color: $text-white;
+  text-align: center;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,13 @@
+.feedback__wrapper {
+  display: flex;
+  margin-bottom: 50px;
+
+  @media #{$tablet-width--md} {
+    display: block;
+  }
+
+  @media #{$tablet-width} {
+		display: block;
+    margin-bottom: 20px;
+	}
+}

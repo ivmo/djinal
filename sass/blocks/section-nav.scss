@@ -1,0 +1,116 @@
+.section-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 27px;
+
+  @media #{$tablet-width} {
+    flex-wrap: wrap;
+  }
+}
+
+.section-nav--calc {
+  flex-wrap: wrap;
+}
+
+.section-nav--padding {
+  padding: 25px;
+  padding-bottom: 0;
+}
+
+.section-nav__item {
+  margin-left: 10px;
+  margin-bottom: 15px;
+  padding: 12px 22px;
+  border-radius: 26px;
+  color: $gray-link;
+  font-size: $font;
+  line-height: $line-xs;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all .2s;
+
+  &:hover {
+    color: $color-primary;
+  }
+
+  &:active {
+    color: darken($color-primary, 5%);
+    transition: none;
+  }
+
+  &--active {
+    background: $color-primary;
+		color: $text-white;
+    text-decoration: none;
+
+		&:hover {
+      color: $text-white;
+			background: lighten($color-primary, 10%);
+		}
+		&:active {
+      color: $text-white;
+      background: darken($color-primary, 5%);
+			transition: none;
+		}
+  }
+}
+
+.section-nav__item--check {
+  padding-left: 40px;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 13px;
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -35px -49px;
+  }
+}
+
+.section-nav__item--tabs {
+  position: relative;
+  background: none;
+  border: 1px solid $gray-state;
+  color: $gray-state;
+  font-size: $font;
+  line-height: $line-xs;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-decoration: none;
+
+  &:hover {
+    border: 1px solid $color-primary;
+  }
+}
+
+@keyframes wow {
+  0% {
+    transform: translateY(-50%) scale(1);
+  },
+  50% {
+    transform: translateY(-50%) scale(1.5);
+  },
+  100% {
+    transform: translateY(-50%) scale(1);
+  }
+}
+
+.section-nav__item--active-tab {
+  border: 1px solid $color-primary;
+  color: $color-secondary;
+
+  &:before {
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    animation: wow 0.3s;
+    background-position: -61px -49px;
+  }
+}

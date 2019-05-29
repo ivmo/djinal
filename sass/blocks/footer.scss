@@ -1,0 +1,133 @@
+.footer {
+  padding-bottom: 20px;
+}
+
+.footer__top {
+  margin-bottom: 20px;
+  border-bottom: 1px solid $gray--light;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+
+  @media #{$mobile-width} {
+    // flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.footer__title {
+  max-width: 240px;
+  flex-shrink: 0;
+
+  @media #{$tablet-width--md} {
+    width: 160px;
+  }
+
+  @media #{$mobile-width} {
+    width: auto;
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  span {
+    display: block;
+    margin-bottom: 25px;
+    font-size: $font-sm;
+    line-height: $line-sm;
+    color: $text-black;
+
+    @media #{$mobile-width} {
+      text-align: center;
+    }
+  }
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  @media #{$tablet-width--md} {
+    flex-direction: column;
+    padding: 0 25px;
+  }
+
+  @media #{$tablet-width} {
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+  }
+
+  @media #{$mobile-width} {
+    width: auto;
+    padding: 0;
+    order: 0;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+}
+
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-grow: 1;
+  flex-wrap: wrap;
+
+  @media #{$tablet-width} {
+    flex-direction: column;
+    flex-grow: 0;
+    align-items: center;
+  }
+
+  @media #{$mobile-width} {
+    order: 2;
+    margin-bottom: 20px;
+  }
+
+  .footer__wrapper:first-child {
+    padding-right: 10px;
+
+    @media #{$tablet-width} {
+      padding-right: 0;
+    }
+  }
+}
+
+.footer__text {
+  margin-bottom: 50px;
+  font-size: $font-xxs;
+  line-height: $line-xxs;
+  color: $text-black;
+
+  @media #{$tablet-width} {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__warning {
+  font-size: $font-xxlg;
+  line-height: $line-largest;
+  color: $gray;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed';
+  text-align: center;
+
+  @media #{$tablet-width} {
+    font-size: $font-xlg;
+    line-height: $line-xlg;
+  }
+}

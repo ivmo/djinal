@@ -1,0 +1,26 @@
+.sidebar-info {
+  margin-bottom: 20px;
+  padding: 34px 37px;
+  background: $gray--med;
+  border: 1px solid $gray--lg;
+  border-radius: 12px;
+  color: $color-secondary;
+}
+
+.sidebar-info__item {
+  margin-bottom: 17px;
+  font-size: $font-sm;
+  line-height: $line-lg;
+
+  a {
+    color: $color-secondary;
+  }
+}
+
+.sidebar-info__item--medium {
+  font-weight: 400;
+}
+
+.sidebar-info__item--upper {
+  text-transform: uppercase;
+}

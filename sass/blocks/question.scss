@@ -1,0 +1,22 @@
+.question {
+  max-width: 350px;
+  margin: auto;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+
+.question__pic {
+  margin: 0;
+  line-height: 0;
+  text-align: center;
+
+  img {
+    width: 100%;
+  }
+}
+
+.question__footer {
+  padding: 20px;
+  background: $color-secondary url("../img/pattern.png");
+}

@@ -1,0 +1,51 @@
+.marks {
+  max-width: 280px;
+  // transition: all 0.4s;
+}
+
+
+.marks--hide {
+  display: none;
+}
+
+// @keyframes open {
+//   0% {
+//     height: 0%;
+//     overflow: hidden;
+//   },
+//   100% {
+//     height: auto;
+//   }
+// }
+
+.marks--open {
+  display: block;
+  // animation: open 0.8s;
+}
+
+.marks--reviews {
+  margin-bottom: 30px;
+}
+
+
+.marks__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.marks__item--reviews {
+  justify-content: flex-start;
+}
+
+.marks__text {
+  margin-right: 10px;
+  font-size: $font;
+  line-height: $line-xlg;
+}
+
+.marks__text--reviews {
+  margin-right: auto;
+  margin-left: 15px;
+}

@@ -1,0 +1,62 @@
+.content-header {
+  margin-bottom: 55px;
+  background-color: $bg-opacity;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media #{$tablet-width--md} {
+    margin-bottom: 25px;
+  }
+
+  &--treatment {
+    background-image: url("../img/treatment.jpg");
+  }
+
+  &--rest {
+    background-image: url("../img/rest.jpg");
+  }
+
+  &--news {
+    background-image: url("../img/news-bg.jpg");
+  }
+
+  &--room-double {
+    background-image: url("../img/room-bg.jpg");
+  }
+
+  &--residence {
+    background-image: url("../img/residence.jpg");
+  }
+
+  &--reviews {
+    background-image: url("../img/review.jpg");
+  }
+
+  &--prices {
+    background-image: url("../img/prices.jpg");
+  }
+
+  &--calc {
+    background-image: url("../img/prices.jpg");
+  }
+
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.content-header__title {
+  margin: 0;
+  color: $text-white;
+  text-shadow: -1px 1px 1px $bg-black;
+  font-family: 'Comfortaa', Verdana, sans-serif;
+  font-weight: 700;
+  font-size: $title-font--md;
+  line-height: $line-xlg;
+
+  @media #{$tablet-width} {
+    text-align: center;
+  }
+}

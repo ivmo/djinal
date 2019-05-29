@@ -1,0 +1,14 @@
+.gallery-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-slider__item {
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  border-radius: 12px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+  }
+}

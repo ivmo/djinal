@@ -1,0 +1,32 @@
+.footer-nav {
+  margin: 0;
+  margin-right: 40px;
+  padding: 0;
+
+  @media #{$tablet-width--md} {
+    margin-right: 20px;
+  }
+  @media #{$mobile-width} {
+    margin: 0;
+    padding: 0 10px;
+  }
+}
+
+.footer-nav__item {
+  list-style: none;
+  margin-bottom: 7px;
+}
+
+.footer-nav__link {
+  font-size: $font-xs;
+  line-height: $line-xs;
+  color: $text-dark;
+  transition: all 0.2s;
+
+  &:hover {
+    color: $text-accent;
+  }
+  &:active {
+    text-decoration: none;
+  }
+}

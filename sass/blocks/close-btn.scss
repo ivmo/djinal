@@ -1,0 +1,35 @@
+.close-btn {
+  position: absolute;
+  display: block;
+  top: 30px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+  z-index: 2;
+
+  &:before {
+    content: '';
+    width: 35px;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    height: 4px;
+    background: #ff7400;
+    border-radius: 4px;
+    transform: rotate3d(0,0,1,45deg);
+  }
+
+  &:after {
+    content: '';
+    width: 35px;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    height: 4px;
+    background: #ff7400;
+    border-radius: 4px;
+    transform: rotate3d(0,0,1,-45deg);
+  }
+}

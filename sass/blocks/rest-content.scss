@@ -1,0 +1,59 @@
+.rest-content {
+  margin-right: 20px;
+  flex-basis: 100%;
+}
+
+.rest-content__img-big {
+  margin: 0;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  font-size: 0;
+  line-height: 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+.rest-content__text {
+
+  p {
+    margin-bottom: 25px;
+    color: $color-secondary;
+    font-size: $font-sm;
+    line-height: $line-md;
+  }
+
+  blockquote {
+    position: relative;
+    padding-left: 16px;
+    font-family: 'Comfortaa', Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: $font;
+    line-height: $line-lg;
+    color: $color-secondary;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 7px;
+      background: url("../img/quote.png");
+      background-repeat: repeat-y;
+    }
+  }
+}
+
+.rest-content__name {
+  text-align: right;
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  color: $color-secondary;
+}

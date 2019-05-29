@@ -1,0 +1,141 @@
+.steps {
+
+}
+
+.steps__title {
+  margin-bottom: 20px;
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  font-size: $font-lg;
+  line-height: $line-lg;
+  color: $text-dark;
+}
+
+.steps__item {
+  margin-bottom: 50px;
+  border: 1px solid $gray--lg;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.steps__item--padding {
+  padding: 25px;
+}
+
+.steps__program-choice {
+
+}
+
+.steps__description {
+  padding: 25px;
+  padding-top: 0;
+  border-bottom: 1px solid $gray--lg;
+  line-height: $line-lg;
+  color: $color-secondary;
+  font-weight: 400;
+}
+
+.steps__fields-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 25px;
+
+  @media #{$tablet-width} {
+    // display: block;
+    padding: 20px 5px;
+  }
+}
+
+.steps__fields-list--reverse {
+  flex-direction: row-reverse;
+  width: 100%;
+
+  @media #{$tablet-width} {
+    padding: 0 5px;
+  }
+}
+
+.steps__fields-list--bottom {
+
+  @media #{$tablet-width} {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.steps__field {
+  max-width: 43%;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media #{$desktop-width} {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  @media #{$tablet-width} {
+    max-width: none;
+    text-align: center;
+  }
+
+  @media #{$mobile-width} {
+    width: 100%;
+  }
+
+  .field-text__input {
+    width: 100%;
+  }
+
+}
+
+.steps__adds {
+  max-width: 320px;
+  margin-left: 20px;
+
+  @media #{$tablet-width} {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  a {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 5px;
+    color: $text-dark;
+    margin-left: 25px;
+    text-decoration: none;
+    border-bottom: 1px dashed $text-dark;
+
+    &:hover {
+      color: $color-primary;
+      border-color: $color-primary;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      left: -25px;
+      top: 2px;
+    }
+
+    &:first-child:before {
+      width: 16px;
+      height: 13px;
+      background-position: -69px -113px;
+    }
+
+    &:nth-child(2):before {
+      width: 16px;
+      height: 15px;
+      background-position: -103px -173px;
+    }
+  }
+}
